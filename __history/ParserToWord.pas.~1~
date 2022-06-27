@@ -155,7 +155,7 @@ begin
   doc.Selection.TypeText(' ');
   doc.WordBasic.EquationEdit;{ вставляем уравнение  }
   doc.Selection.TypeText(matName);
-  doc.Selection.OMaths.Item(1).Functions.Add(doc.Selection.Range, 5, 1, );
+  doc.Selection.OMaths.Item(1).Functions.Add(doc.Selection.Range, 5, 1, ).Delim.NoRightChar := true;
   doc.Selection.MoveLeft;
   doc.Selection.OMaths.Item(1).Functions.Add(doc.Selection.Range, 12, numCells, numCols);
 
